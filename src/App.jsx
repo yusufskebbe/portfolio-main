@@ -1,6 +1,8 @@
 import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import MyProjects from "./components/MyProjects";
+import ReactMe from "./components/ReactMe";
 
 
 
@@ -15,6 +17,8 @@ function App() {
       <main className="p-60">
       <Hero/>
       <AboutMe/>
+      <MyProjects/>
+      <ReactMe/>
       </main>
    
 
