@@ -10,10 +10,10 @@ function Hero() {
     <div className=''>
      <div className='container min-w-4xl flex'>
       <div className='leftside w-1/2 '>
-        <h1 className='text-4xl font-bold'>
-        Front-End Developer
+        <h1 className='mb-4 tracking-widest leading-tight uppercase  text-6xl font-bold bg-gradient-to-r from-yellow-500  via-green-700 to-green-300 inline-block text-transparent bg-clip-text'>
+        Frontend Developer
         </h1>
-        <p className='mt-4'>Hi, I'm Yusuf KEBBE. A passionate Front-end React Developer based in Istanbul, Türkiye. 📍</p>
+        <p className='mt-4 text-lg '>Hi, I'm Yusuf KEBBE. A passionate Front-end React Developer based in Istanbul, Türkiye. 📍</p>
         <div className="social-links mt-8 flex gap-4">
         <i className="fa-brands fa-github text-3xl"></i>
         <i className="fa-brands fa-linkedin text-3xl"></i>
