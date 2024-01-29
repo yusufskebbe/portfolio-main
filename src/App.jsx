@@ -14,7 +14,7 @@ function App() {
 
     
      <Header/>
-      <main className="p-60">
+      <main className="px-60 py-40">
       <Hero/>
       <AboutMe/>
       <MyProjects/>
