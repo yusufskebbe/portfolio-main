@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import cv from '../assets/cv.pdf.pdf';
+import Modal from './Modal';
 
 function ReactMe() {
+
+  
+  const [modal, setModal] = useState(false)
+
+
+  // function handleModal (){
+  //   setModal(!modal)
+  // }
+
+
   return (
     <div className='mt-40 flex flex-col justify-center items-center '>
       <div className='flex gap-4'>
@@ -15,8 +27,10 @@ function ReactMe() {
             <p className='font-semibold'>kebbeyusuf@gmail.com</p>
             </div> */}
             <div className='flex  justify-around items-center gap-20'> 
-        <a href="" className='mt-10 py-3 px-4 bg-gradient-to-b from-violet-700  via-blue-500 to-blue-300  text-white font-semibold rounded-lg uppercase text-xl'>Download my Cv</a>
-        <a href="" className='mt-10 py-3 px-4 bg-gradient-to-b from-violet-700  via-blue-500 to-blue-300  text-transparent bg-clip-text font-semibold rounded-lg uppercase text-xl '>send me email</a>
+        <a href={cv} download="cv"className='mt-10 py-3 px-4 bg-gradient-to-b from-violet-700  via-blue-500 to-blue-300  text-white font-semibold rounded-lg uppercase text-xl hover:scale-110 transition-all'>Download my Cv</a>
+        <button onClick={()=> setModal(true)}  className='mt-10 py-3 px-4 bg-gradient-to-b from-violet-700  via-blue-500 to-blue-300  text-transparent bg-clip-text font-semibold rounded-lg uppercase text-xl border-solid border-2 shadow-md  '>send me email</button>
+        <Modal modal={modal} onClose= {()=> setModal(false)} /> 
+            
         </div>
       
      
