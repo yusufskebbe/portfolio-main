@@ -14,21 +14,21 @@ function ReactMe() {
 
 
   return (
-    <div className='mt-40 flex flex-col justify-center items-center '>
-      <div className='flex gap-4'>
+    <div id='contact' className='mt-20 flex flex-col justify-center items-center  '>
+      <div className='flex flex-col gap-4 md:flex-row'>
       <h1 className=' text-center text-6xl font-semibold bg-gradient-to-b from-violet-700  via-blue-500 to-blue-200  text-transparent bg-clip-text  uppercase tracking-wide'>hit Me up ! </h1>
-      <span className='text-5xl my-5'>👇</span>
+      <span className='text-5xl my-5 text-center md:text-right'>👇</span>
       </div>
      
-     <p className='mt-5 opacity-60 font-semibold text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam animi qui minima adipisci nobis officiis quae corporis dolor esse!</p>
+     <p className='mt-5 opacity-60 font-semibold text-center'>Thank your for visiting my portfolio I hope that you like it :) keep on mind that this portfolio is still on building so keep your eyes on  </p>
         {/* <div className='flex  justify-center items-center gap-3'> 
             {/* <i class="fa-regular fa-envelope"></i>
             <h1 className='font-bold'>Mail :</h1>
             <p className='font-semibold'>kebbeyusuf@gmail.com</p>
             </div> */}
-            <div className='flex  justify-around items-center gap-20'> 
+            <div className='flex flex-col  justify-around items-center gap-2 md:flex-row md:gap-20'> 
         <a href={cv} download="cv"className='mt-10 py-3 px-4 bg-gradient-to-b from-violet-700  via-blue-500 to-blue-300  text-white font-semibold rounded-lg uppercase text-xl hover:scale-110 transition-all'>Download my Cv</a>
-        <button onClick={()=> setModal(true)}  className='mt-10 py-3 px-4 bg-gradient-to-b from-violet-700  via-blue-500 to-blue-300  text-transparent bg-clip-text font-semibold rounded-lg uppercase text-xl border-solid border-2 shadow-md  '>send me email</button>
+        <button onClick={()=> setModal(true)}  className='mt-10 py-3 px-8 bg-gradient-to-b from-violet-700  via-blue-500 to-blue-300  text-transparent bg-clip-text font-semibold rounded-lg uppercase text-xl border-solid border-2 shadow-md  '>send me email</button>
         <Modal modal={modal} onClose= {()=> setModal(false)} /> 
             
         </div>

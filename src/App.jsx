@@ -15,7 +15,7 @@ function App() {
 
     
      <Header/>
-      <main className="px-60 py-40 relative h-screen">
+      <main className="md:px-60 md:py-40 relative h-screen">
       <Hero/>
       <AboutMe/>
       <MyProjects/>
